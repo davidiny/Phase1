@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  instructions: MyText
+  card_text: MyText
+  act: 1
+  alert_text: MyText
+  type: 
+
+two:
+  instructions: MyText
+  card_text: MyText
+  act: 1
+  alert_text: MyText
+  type: 
