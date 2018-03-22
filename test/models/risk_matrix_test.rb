@@ -5,4 +5,5 @@ class RiskMatrixTest < ActiveSupport::TestCase
   #   assert true
   # end
   should have_one(:character)
+  
 end

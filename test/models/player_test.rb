@@ -5,4 +5,7 @@ class PlayerTest < ActiveSupport::TestCase
   #   assert true
   # end
   should have_one(:character) 
+  
+  should validate_presence_of(:last_name)
+  should validate_presence_of(:gender)
 end
