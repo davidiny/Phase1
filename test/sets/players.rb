@@ -1,5 +1,5 @@
 module Contexts
-  module Players
+  module Player
 
     def create_players
       @player1    = FactoryBot.create(:player)
@@ -7,7 +7,7 @@ module Contexts
       @player3   = FactoryBot.create(:player, first_name: "Arthur", age: 30, occupation: 'golf player')
     end
     
-    def destroy_players
+    def delete_players
       @player1.delete  
       @player2.delete
       @player3.delete

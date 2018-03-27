@@ -1,5 +1,5 @@
 module Contexts
-  module Characters
+  module Character
 
     def create_characters
       @max1    = FactoryBot.create(:character, player: @player1, risk_matrix: @risk1, decision: @decision1)
@@ -7,7 +7,7 @@ module Contexts
       @josef1   = FactoryBot.create(:character, player: @player3, risk_matrix: @risk3, decision: @decision3)
     end
     
-    def destroy_characters
+    def delete_characters
       @max1.delete  
       @izak1.delete
       @josef1.delete

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180320045458) do
     t.text "card_text"
     t.integer "act"
     t.text "alert_text"
-    t.string "type"
+    t.string "card_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

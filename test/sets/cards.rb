@@ -3,11 +3,11 @@ module Contexts
 
     def create_cards
       @first    = FactoryBot.create(:card)
-      @second    = FactoryBot.create(:card, text: 'This is the beginning...')
-      @third   = FactoryBot.create(:card, character_card: @max3, instructions: 'Do not read this card if ...', type: 'complicity')
+      @second    = FactoryBot.create(:card, card_text: 'This is the beginning...')
+      @third  = FactoryBot.create(:card, instructions: 'Do not read this card if ...', card_type: 'regular')
     end
     
-    def destroy_cards
+    def delete_cards
       @first.delete  
       @second.delete
       @third.delete

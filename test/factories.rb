@@ -32,12 +32,12 @@ FactoryBot.define do
     card_text "One a stormy night in..."
     act 1
     alert_text "Skip this card if..."
-    type "Complicity card"
+    card_type "complicity"
   
   end
   
   factory :decision do
-      decision_string '1,0,1,1'
+      decision_string "1,0,1,1"
   end
 
 end
