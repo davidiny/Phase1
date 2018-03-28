@@ -1,7 +1,7 @@
 FactoryBot.define do
   
   factory :risk_matrix do
-    risk_score '3,7,13,20'
+    risk_score 25
   end
 
 

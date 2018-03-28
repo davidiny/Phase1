@@ -9,7 +9,7 @@ module Contexts
   # explicitly include all sets of contexts used for testing 
   include Contexts::Cards
   include Contexts::Player
-  include Contexts::RiskMatrix
+  include Contexts::RiskMatrices
   include Contexts::Decisions
   include Contexts::Character
 end
