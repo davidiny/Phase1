@@ -8,8 +8,8 @@ require './test/sets/risk_matrix'
 module Contexts
   # explicitly include all sets of contexts used for testing 
   include Contexts::Cards
-  include Contexts::Player
+  include Contexts::Players
   include Contexts::RiskMatrices
   include Contexts::Decisions
-  include Contexts::Character
+  include Contexts::Characters
 end

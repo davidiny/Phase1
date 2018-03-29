@@ -11,9 +11,9 @@ FactoryBot.define do
     last_name "Griffin"
     bio "Born on September..."
     gender "M"
-    assocation :risk_matrix 
-    assocation :player 
-    assocation :decision 
+    association :risk_matrix 
+    association :decision 
+    association :player 
   end  
   
 

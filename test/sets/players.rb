@@ -1,5 +1,5 @@
 module Contexts
-  module Player
+  module Players
 
     def create_players
       @player1    = FactoryBot.create(:player)
