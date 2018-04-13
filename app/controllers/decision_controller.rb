@@ -6,7 +6,7 @@ class DecisionsController < ApplicationController
   end
 
   def show
-      @decision = @decisoin
+      @a_decision = @decision
   end
 
   def edit
@@ -44,7 +44,7 @@ class DecisionsController < ApplicationController
       @decision = Decision.find(params[:id])
     end
 
-    def decision _params
+    def decision_params
       params.require(:decision).permit(:decision_string)
     end
 end
