@@ -6,7 +6,9 @@ class CharactersController < ApplicationController
   end
 
   def show
-      @character = @character
+      @risk = @character.risk_matrix
+      @decision = @character.decision
+      
   end
 
   def edit

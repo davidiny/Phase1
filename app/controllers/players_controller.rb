@@ -6,7 +6,6 @@ class PlayersController < ApplicationController
   end
 
   def show
-      @a_player = @player
   end
 
   def edit

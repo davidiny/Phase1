@@ -6,7 +6,7 @@ class RiskMatricesController < ApplicationController
   end
 
   def show
-      @a_risk_matrix = @risk_matrix
+    @character = @risk_matrix.character
   end
 
   def edit

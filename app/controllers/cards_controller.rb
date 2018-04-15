@@ -6,7 +6,6 @@ class CardsController < ApplicationController
   end
 
   def show
-    @a_card = @card
   end
 
   def edit

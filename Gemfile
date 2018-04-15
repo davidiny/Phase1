@@ -67,6 +67,7 @@ gem 'validates_timeliness', '4.0.2'
 gem 'simple_form', '3.5.0'
 
 # Materialize and UI gems
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'materialize-sass', '0.100.2'
 gem 'materialize-form', '1.0.8'
 gem 'jquery-rails', '4.3.1'

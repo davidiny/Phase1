@@ -1,6 +1,6 @@
 class Player < ApplicationRecord
     
-  has_one:character
+  has_many:characters
   
   validates_presence_of :last_name, :gender
   validates_numericality_of :age, :only_integer => true, :greater_than_or_equal_to => 0, :allow_blank => true

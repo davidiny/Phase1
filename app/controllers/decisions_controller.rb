@@ -6,7 +6,6 @@ class DecisionsController < ApplicationController
   end
 
   def show
-      @a_decision = @decision
   end
 
   def edit
