@@ -12,7 +12,7 @@ class CardsController < ApplicationController
   end
 
   def new
-    @card= Card.new
+    @card = Card.new
   end
 
   def create
@@ -27,7 +27,7 @@ class CardsController < ApplicationController
   def update
     @card.update(card_params)
     if @card.save
-      redirect_to camp_path(@card), notice: "#{@card.card_type} was revised in the system."
+      redirect_to card_path(@card), notice: "#{@card.card_type} was updated in the system."
     else
       render action: 'edit'
     end

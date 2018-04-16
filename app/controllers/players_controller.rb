@@ -27,7 +27,7 @@ class PlayersController < ApplicationController
   def update
     @player.update(player_params)
     if @player.save
-      redirect_to player_path(@player), notice: "#{@player.first_name} was added to the system."
+      redirect_to player_path(@player), notice: "#{@player.first_name} was updated in the system."
     else
       render action: 'edit'
     end
@@ -35,7 +35,7 @@ class PlayersController < ApplicationController
 
   def destroy
     @player.destroy
-    redirect_to players_url, notice: "#{@player.first_name} was added to the system."
+    redirect_to players_url, notice: "#{@player.first_name} was removed from the system."
   end
 
   private
