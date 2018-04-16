@@ -28,7 +28,7 @@ class RiskMatricesController < ApplicationController
   def update
     @risk_matrix.update(risk_matrix_params)
     if @risk_matrix.save
-      redirect_to risk_matrix_path(@risk_matrix), notice: "The risk matrix was added to the system."
+      redirect_to risk_matrix_path(@risk_matrix), notice: "The risk matrix was updated in the system."
     else
       render action: 'edit'
     end
@@ -36,7 +36,7 @@ class RiskMatricesController < ApplicationController
 
   def destroy
     @risk_matrix.destroy
-    redirect_to players_url, notice: "The risk matrix was removed to the system."
+    redirect_to risk_matrices_url, notice: "The risk matrix was removed from the system."
   end
 
   private

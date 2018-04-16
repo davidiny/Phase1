@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :cards
   resources :characters
   resources :decisions
-  resources :home
   resources :players
-  resources :riskmatrices
+  resources :risk_matrices
+  
+  root 'home#index'
 end
